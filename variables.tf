@@ -7,7 +7,7 @@ variable instance_type {
 }
 
 variable sg_ids {
-    type = string
+    type = list
 }
 
 variable project {
@@ -21,4 +21,8 @@ variable env {
 variable tags {
     type = map
     default = {}
+}
+
+variable name {
+    type = string
 }

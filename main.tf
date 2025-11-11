@@ -5,7 +5,7 @@ resource "aws_instance" "main" {
   tags = merge (
     var.tags,
     {
-        Name = local.common_name
+        Name = "${local.common_name}-${var.name}"
     }
   )
 }
