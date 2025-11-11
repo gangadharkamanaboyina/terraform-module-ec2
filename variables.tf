@@ -26,3 +26,9 @@ variable tags {
 variable name {
     type = string
 }
+
+variable "subnet_id" {
+  description = "The Subnet ID to launch the EC2 instance in"
+  type        = string
+  default     = null
+}
