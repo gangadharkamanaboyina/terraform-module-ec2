@@ -32,3 +32,8 @@ variable "subnet_id" {
   type        = string
   default     = null
 }
+
+variable "user_data" {
+  type    = string
+  default = null
+}

@@ -3,6 +3,7 @@ resource "aws_instance" "main" {
   instance_type          = var.instance_type
   vpc_security_group_ids = var.sg_ids
   subnet_id = var.subnet_id
+  user_data = var.user_data
   tags = merge (
     var.tags,
     {
